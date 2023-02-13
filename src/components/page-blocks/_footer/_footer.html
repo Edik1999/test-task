@@ -1,0 +1,48 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper flex --just-space --align-center">
+            <span class="footer__company">© 2018 «LoremIpsum.net» Все права защищены.</span>            
+            <div class="footer__divider"></div>
+            <div class="footer__payments flex">
+                <div class="footer__payments-wrapper flex --align-center">
+                    @@include('../../bem-blocks/_sprite/_sprite.html',{
+                        "class": "footer__ico",
+                        "id": "qiwi"
+                    })
+                    <span class="footer__payments-text">Qiwi wallet</span>
+                </div>
+                <div class="footer__payments-wrapper flex --align-center">
+                    @@include('../../bem-blocks/_sprite/_sprite.html',{
+                        "class": "footer__ico",
+                        "id": "yandex"
+                    })
+                    <span class="footer__payments-text">Yandex Money</span>
+                </div>
+                <div class="footer__payments-wrapper flex --align-center">
+                    @@include('../../bem-blocks/_sprite/_sprite.html',{
+                        "class": "footer__ico",
+                        "id": "wm"
+                    })
+                    <span class="footer__payments-text">Web Money</span>
+                </div>
+            </div>
+            <span class="footer__divider"></span>
+            <div class="footer__contacts-wrapper flex">
+                <a href="mailto:example@mail.com" class="footer__contacts flex --align-center">
+                    @@include('../../bem-blocks/_sprite/_sprite.html',{
+                        "class": "footer__ico",
+                        "id": "email"
+                    })
+                    info@ipsum228.com
+                </a>
+                <a href="https://vk.com/" target="_blank" class="footer__contacts flex --align-center">
+                    @@include('../../bem-blocks/_sprite/_sprite.html',{
+                        "class": "footer__ico",
+                        "id": "vk"
+                    })
+                    Мы вконтакте
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>

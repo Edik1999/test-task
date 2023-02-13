@@ -1,0 +1,40 @@
+.label{
+    position: relative;
+    background: #FFFFFF;
+    border: 2px solid var(--main-color);
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+    @include btn_anim;
+
+    &--active{
+        background: rgba(61,64,80,.85);
+        border: 2px solid rgba(61,64,80,.85);
+
+        .label__text{
+            color: #fff;
+        }
+    }
+}
+
+.input-file{
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.label__img{
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+}
+
+.label__text{
+    font-size: 15px;
+    line-height: 24px;
+    color: #272733;
+    text-transform: uppercase;
+    margin-left: 10px;
+    @include trs;
+}

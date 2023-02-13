@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head/_head.html',{
+"lang":"en",
+"title":"Test task",
+"description":"Test task",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header/_header.html')
+	<main class="main">
+		<section class="banner">
+			<div class="container">
+				<h1 class="banner__title">
+					<span class="colored-text">Lorem ipsum</span> dolor sit<br>amet consectetur <span class="colored-text">adipiscing</span>
+				</h1>
+				<p class="banner__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+				<ul class="banner__list">
+					<li class="banner__item">Totam rem aperiam eaque ipsa</li>
+					<li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+					<li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+				</ul>
+				@@include('components/bem-blocks/button/button.html',{
+					"class": "banner__btn",
+					"text": "заказать"
+				})
+				@@include('components/bem-blocks/button/button.html',{
+					"class": "btn--white banner__btn",
+					"text": "подробнее"
+				})
+			</div>
+		</section>
+		<section class="checkout">
+			<div class="container">
+				<h2 class="checkout__title">
+					Оформление <span class="colored-text"> Заказа</span>
+				</h2>
+				<p class="checkout__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+				<div class="checkout__images flex --align-center">
+					<div class="checkout__img-wrapper">
+						@@include('components/bem-blocks/_sprite/_sprite.html',{
+							"class": "checkout__img",
+							"id": "circle1"
+						})
+						<p class="checkout__description hidden">Lorem ipsum dolorsit amet</p>
+					</div>
+					@@include('components/bem-blocks/dots/dots.html',{
+						"wrapper-class": "checkout__dots-wrap",
+						"dot-class": "checkout__dot"
+					})
+					<div class="checkout__img-wrapper">
+						@@include('components/bem-blocks/_sprite/_sprite.html',{
+							"class": "checkout__img",
+							"id": "circle2"
+						})
+						<p class="checkout__description hidden">Сonsectetur&shy;adipiscing elit</p>
+					</div>
+					@@include('components/bem-blocks/dots/dots.html',{
+						"wrapper-class": "checkout__dots-wrap",
+						"dot-class": "checkout__dot"
+					})
+					<div class="checkout__img-wrapper">
+						@@include('components/bem-blocks/_sprite/_sprite.html',{
+							"class": "checkout__img",
+							"id": "circle3"
+						})
+						<p class="checkout__description hidden">Sed do eiusmod tempor</p>
+					</div>
+					@@include('components/bem-blocks/dots/dots.html',{
+						"wrapper-class": "checkout__dots-wrap",
+						"dot-class": "checkout__dot"
+					})
+					<div class="checkout__img-wrapper checkout__img-wrapper--without-mb">
+						@@include('components/bem-blocks/_sprite/_sprite.html',{
+							"class": "checkout__img",
+							"id": "circle4"
+						})
+						<p class="checkout__description hidden">Esse cillum dolore eu fugiat</p>
+					</div>
+					@@include('components/bem-blocks/dots/dots.html',{
+						"wrapper-class": "checkout__dots-wrap",
+						"dot-class": "checkout__dot"
+					})
+					<div class="checkout__img-wrapper checkout__img-wrapper--without-mb">
+						@@include('components/bem-blocks/_sprite/_sprite.html',{
+							"class": "checkout__img",
+							"id": "circle5"
+						})
+						<p class="checkout__description hidden">Excepteur sint occaecat cupidatat non proident</p>
+					</div>
+				</div>
+				<div class="checkout__description-wrapper flex --just-space">
+					<p class="checkout__description">Lorem ipsum dolorsit amet</p>
+					<p class="checkout__description">Сonsectetur&shy;adipiscing elit</p>
+					<p class="checkout__description">Sed do eiusmod tempor</p>
+					<p class="checkout__description">Esse cillum dolore eu fugiat</p>
+					<p class="checkout__description">Excepteur sint occaecat cupidatat non proident</p>
+				</div>
+				<form action="/" class="checkout__form form" enctype="multipart/form-data">
+					<div class="form__wrapper flex --just-space">
+						@@include('components/bem-blocks/select/select.html',{
+							"class": "form__select"
+						})
+						@@include('components/bem-blocks/input/input.html',{
+							"type": "email",
+							"class": "form__input",
+							"placeholder": "Ваш e-mail",
+							"name": "email",
+							"id": "email"
+						})
+						@@include('components/bem-blocks/input/input.html',{
+							"type": "text",
+							"class": "form__input",
+							"placeholder": "Ваше имя",
+							"name": "name",
+							"id": "name"
+						})
+						<div class="form__range-wrapper">
+							<div class="form__text-wrapper flex --just-space">
+								<p class="form__text">Sed ut perspiciatis, unde omnis iste natus</p>
+								<output class="form__text" for="range" name="outputForRange" id="outputForRange">0 %</output>
+							</div>
+							@@include('components/bem-blocks/input/__range/__range.html', {
+								"name": "range",
+								"id": "range"
+							})
+						</div>
+						@@include('components/bem-blocks/input/__file/__file.html', {
+							"inputClass": "form__input-file",
+							"labelClass": "form__label",
+							"id": "file"
+						})
+					</div>
+					@@include('components/bem-blocks/button/button.html', {
+						"class": "btn--size-big",
+						"text": "Отправить"
+					})
+				</form>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/_footer/_footer.html')
+	@@include('components/page-blocks/_scripts/_scripts.html')
+</body>
+
+</html>

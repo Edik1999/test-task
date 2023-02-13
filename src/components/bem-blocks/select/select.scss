@@ -1,0 +1,77 @@
+.select {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+
+    &.ss-open-below{
+        background: rgba(61, 64, 80, 0.85);
+        border: 1px solid transparent;
+    }
+}
+
+.ss-main .ss-values .ss-placeholder {
+    color: #272733;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ss-main.ss-open-below .ss-values .ss-placeholder {
+    color: #FFFFFF;
+}
+
+.ss-main .ss-arrow path {
+    stroke: #000000;
+}
+
+.ss-main.ss-open-below .ss-arrow path {
+    stroke: #FFFFFF;
+}
+
+.ss-content .ss-list .ss-option {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:hover{
+        background-color: unset;
+        color: #42A9ED;
+        @include trs;
+    }
+
+    &:first-of-type{
+        padding-top: 8px;
+    }
+}
+
+.ss-main .ss-values .ss-single{
+    color: #272733;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 8px 0 8px 5px;
+}
+
+.ss-open-below.ss-main .ss-values .ss-single{
+    color: #FFFFFF;
+}
+
+.ss-content .ss-list {
+    height: 180px;
+    scrollbar-width: thin;
+    scrollbar-color: #3E9CDC #3D4050;
+}
+  
+.ss-list::-webkit-scrollbar {
+    width: 7px;
+}
+  
+.ss-list::-webkit-scrollbar-track {
+    background: #3D4050;
+}
+  
+.ss-list::-webkit-scrollbar-thumb {
+    background-color: #3E9CDC;
+    border-radius: 10px;
+}
